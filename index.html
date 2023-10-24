@@ -3,33 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--5.1) Aca vinculamos las clases de css de Boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Registro de estudiante</title>
 </head>
 <body class="p-3">
-    
-    <h2>Registro de estudiante</h2>
-    <img src="programmer_icon.png" height="100">
+    <main role = "main">
+    <h1>Registro de estudiante</h1>
+    <img src="programmer_icon.png" height="100" alt="programmer_icon">
     <p> Este formulario permite registrar los datos de los estudiantes que se inscriben al curso.</p>
+    <!-- 1) 'ID'
+    El atributo 'id' es una etiqueta que se utiliza para identificar de manera única un elemento en una página web. 
+    Esto es útil para aplicar estilos CSS específicos o para interactuar con el elemento utilizando JavaScript.
+    -->
+    <!-- 5) Bootstrap es un framework CSS que proporciona una serie de componentes predefinidos para facilitar el diseño y la estructura de tu página web.
+            , para aplicar los componentes de Bootstrap, simplemente agrega las clases CSS proporcionadas por Bootstrap a los elementos HTML.
+            una vez vinculados los archivos de Bootstrap, podemos aplicar los estilos de Bootstrap a los elementos HTML, como lo
+            detalle en los puntos 5.1 y 5.2.
+        -->
     <form>
         <div class="mb-3">
-            <label for="">Nombre: </label>
+            <label for="nombre">Nombre: </label>
             <input type="text" name="nombre" id="nombre" required>
         </div>
         <div class="mb-3">
-            <label for="">Apellido: </label>
+            <label for="apellido">Apellido: </label>
             <input type="text" name="apellido" id="apellido" required>
         </div>
-        <div class="mb-3">
-            <label>Email: </label>
-            <input type = "email" name="email" id="email" >
+        <!-- 4) Aca aplicamos el alert alert-primary, este es un estilo de alerta que Bootstrap proporciona, lo unico que debemos hacer
+        es agregar en la clase el esilo de Bootstrap-->
+        <div class="alert alert-primary" role="alert">
+             Esto es una prueba Bootstrap 
         </div>
-        <div> 
-            <input type="checkbox" id="recibir" name="registro" value="notificacion">
-            <label for="recibir"> Recibir notificacion</label><br>
-        </div>
-        <button type="submit" class="btn btn-outline-primary">Registrar</button>
-    </form>
+        <!-- 4) Aca aplicamos el btn btn-dark, este es un estilo de boton que Bootstrap proporciona-->
+        <button type="submit" class="btn btn-dark">Registro</button>    </form>
+</main>
+<!-- 5.2) Aca vinculamos los archivos de javascript de Boostrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
